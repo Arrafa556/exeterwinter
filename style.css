@@ -1,43 +1,92 @@
-@keyframes navbg {
-    to {
-        background: rgb(230, 233, 236);
-        color: white;
-    }
-}
-nav  {
-position: sticky;
+ @keyframes navbg {
+  to {
+    background: rgb(157, 155, 155);
+    color: #081c35;
+
+  }
+ }
+ nav {
+  position: sticky;
   background: transparent;
-  animation: navbg linear 0.7s;
+  animation: navbg linear 0.5s;
   animation-timeline: scroll();
-  animation-range: 0px 300px;
+  animation-range: 0px 200px;
   animation-fill-mode: forwards;
-}
-logo {
-    font-size: 50px;
-    font-weight: bold;
-    color: white;
-}
-
-
-body {
-    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg);
-    background-size: cover;
-    
-}
-.unit-border {
-  border: 1px solid rgb(74, 133, 221);
+ }
+ .div-container {
   text-align: center;
-  padding: 10px;
-  color: white;
-}
-.teks {
-    color: white;
-}
-.article1 {
-        background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 600px;
-    margin: 50px auto;
-    font-family: Arial, sans-serif;
-}
+  padding-top: 50px;
+  height: 200px;
+ }
+ 
+ 
+ * {
+   margin: 0;
+   padding: 10px;
+   font-family: arial, sans-serif;
+ }
+
+
+
+
+ body {
+   background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
+   background-size: cover;
+
+ }
+
+ .grid-container {
+   display: grid;
+   grid-template-columns: auto auto auto;
+   grid-template-rows: 60px 60px;
+   background-color: rgb(33, 150, 243);
+   padding: 10px;
+   border-radius: 20px;
+ }
+
+ .teks {
+   color: white;
+   text-align: center;
+ }
+
+
+ .item-grid {
+   background-color: rgb(93, 142, 154);
+   border: 1px solid black;
+   text-align: center;
+   padding: 10px;
+   border-radius: 20px;
+ }
+
+ .article1 {
+   background-color: rgb(93, 142, 154);
+   border: 1px solid black;
+   border-radius: 20px;
+   text-align: center;
+   padding: 10px;
+    color: rgb(5, 3, 3);
+   margin:  10px;
+ }
+
+ .unit-border {
+   border: 1px solid black;
+   text-align: center;
+   padding: 10px;
+   color: white;
+ }
+
+ .logo {
+   color: white;
+   font-size: 20px;
+   padding: 14px 16px;
+   margin: 0;
+ }
+
+ .navbar {
+   display: flex;
+   background-color: rgb(33, 150, 243);
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid black;
+   padding: 10px;
+ }
