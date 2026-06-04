@@ -1,32 +1,43 @@
- body {
-background-image: url("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg");
-background-size: cover;
- 
- }
-.grid-container {
-  display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows:60px 60px;
-  background-color:rgb(33, 150, 243);
-  padding: 10px;
+@keyframes navbg {
+    to {
+        background: rgb(230, 233, 236);
+        color: white;
+    }
+}
+nav  {
+position: sticky;
+  background: transparent;
+  animation: navbg linear 0.7s;
+  animation-timeline: scroll();
+  animation-range: 0px 300px;
+  animation-fill-mode: forwards;
+}
+logo {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
 }
 
 
-
-.item-grid {
-  background-color: rgb(167, 237, 255);
-  border: 1px solid black;
-  text-align: center;
-  padding: 10px;
-}
-.article1 {
-  background-color: rgb(167, 237, 255);
-  border: 1px solid black;
-  text-align: center;
-  padding: 10px;
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg);
+    background-size: cover;
+    
 }
 .unit-border {
-  border: 1px solid black;
+  border: 1px solid rgb(74, 133, 221);
   text-align: center;
   padding: 10px;
+  color: white;
+}
+.teks {
+    color: white;
+}
+.article1 {
+        background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
 }
